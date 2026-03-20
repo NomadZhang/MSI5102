@@ -1,0 +1,33 @@
+{
+  "config": {
+    "project_root": "/Users/bob/Desktop/MNIST",
+    "raw_data_dir": "/Users/bob/Desktop/MNIST/data/raw",
+    "processed_data_dir": "/Users/bob/Desktop/MNIST/data/processed",
+    "raw_dataset_path": "/Users/bob/Desktop/MNIST/data/raw/mnist.npz",
+    "processed_dataset_path": "/Users/bob/Desktop/MNIST/data/processed/mnist_flattened.npz",
+    "artifacts_dir": "/Users/bob/Desktop/MNIST/artifacts",
+    "figures_dir": "/Users/bob/Desktop/MNIST/artifacts/figures",
+    "results_dir": "/Users/bob/Desktop/MNIST/artifacts/results",
+    "pca_sample_size": 5000,
+    "tsne_sample_size": 3000,
+    "random_state": 42
+  },
+  "dataset": {
+    "train_samples": 60000,
+    "test_samples": 10000,
+    "num_features": 784,
+    "num_classes": 10
+  },
+  "embedding": {
+    "pca_explained_variance_ratio": 0.1692299097776413
+  },
+  "top_model": {
+    "model": "neural_network",
+    "train_seconds": 4.278,
+    "predict_seconds": 0.004,
+    "accuracy": 0.9788,
+    "precision_macro": 0.97875,
+    "recall_macro": 0.97861,
+    "f1_macro": 0.97866
+  }
+}

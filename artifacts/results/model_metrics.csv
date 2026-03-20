@@ -1,0 +1,4 @@
+model,train_seconds,predict_seconds,accuracy,precision_macro,recall_macro,f1_macro
+neural_network,4.278,0.004,0.9788,0.97875,0.97861,0.97866
+knn,0.011,2.192,0.9691,0.96949,0.96876,0.96899
+logistic_regression,6.012,0.008,0.926,0.92504,0.92493,0.92491

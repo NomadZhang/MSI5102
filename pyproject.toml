@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mnist-digit-recognition"
+version = "0.1.0"
+description = "ETL and modeling pipeline for handwritten digit recognition on MNIST."
+authors = ["Codex <codex@example.com>"]
+readme = "README.md"
+packages = [{ include = "mnist_pipeline", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.15"
+matplotlib = "^3.10.1"
+numpy = "^2.2.4"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+seaborn = "^0.13.2"
+
+[tool.poetry.scripts]
+mnist-pipeline = "mnist_pipeline.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
