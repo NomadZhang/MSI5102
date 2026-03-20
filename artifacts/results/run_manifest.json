@@ -23,7 +23,7 @@
   },
   "top_model": {
     "model": "neural_network",
-    "train_seconds": 4.278,
+    "train_seconds": 4.272,
     "predict_seconds": 0.004,
     "accuracy": 0.9788,
     "precision_macro": 0.97875,

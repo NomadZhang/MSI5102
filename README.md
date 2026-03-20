@@ -21,3 +21,11 @@ poetry run mnist-pipeline
 ```
 
 Generated artifacts are written under `artifacts/`.
+
+## Notebook
+
+An equivalent notebook lives at `notebooks/mnist_pipeline.ipynb`.
+
+```bash
+poetry run jupyter notebook
+```
