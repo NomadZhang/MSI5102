@@ -1,0 +1,5 @@
+split,samples,purpose,fraction_of_full_dataset
+Official train set,60000,Source pool for tuning and final retraining,0.8571
+Selection train split,51000,Fit candidate hyperparameter settings,0.7286
+Validation split,9000,Pick the best hyperparameters,0.1286
+Official test set,10000,Final unbiased evaluation only,0.1429

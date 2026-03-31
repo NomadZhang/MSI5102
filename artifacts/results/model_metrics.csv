@@ -1,4 +1,4 @@
-model,train_seconds,predict_seconds,accuracy,precision_macro,recall_macro,f1_macro
-neural_network,4.272,0.004,0.9788,0.97875,0.97861,0.97866
-knn,0.018,2.103,0.9691,0.96949,0.96876,0.96899
-logistic_regression,5.844,0.009,0.926,0.92504,0.92493,0.92491
+model_key,model,selected_configuration,train_seconds,predict_seconds,accuracy,precision_macro,recall_macro,f1_macro
+neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",4.011,0.006,0.9807,0.98062,0.98052,0.98056
+knn,k-Nearest Neighbors,"k=3, weights=distance",0.007,2.087,0.9717,0.9719,0.97134,0.97153
+logistic_regression,Logistic Regression,C=0.1,2.484,0.012,0.9257,0.92479,0.92459,0.92457

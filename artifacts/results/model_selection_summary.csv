@@ -1,0 +1,4 @@
+model_key,model,selected_configuration,validation_accuracy,validation_f1_macro
+neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",0.977,0.97693
+knn,k-Nearest Neighbors,"k=3, weights=distance",0.97089,0.97083
+logistic_regression,Logistic Regression,C=0.1,0.92178,0.92094

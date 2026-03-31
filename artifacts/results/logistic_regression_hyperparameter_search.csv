@@ -1,0 +1,5 @@
+model_key,model,parameter_label,C,fit_seconds,predict_seconds,validation_accuracy,validation_precision_macro,validation_recall_macro,validation_f1_macro
+logistic_regression,Logistic Regression,C=0.1,0.1,2.002,0.009,0.92178,0.92113,0.92093,0.92094
+logistic_regression,Logistic Regression,C=0.3,0.3,2.865,0.004,0.92178,0.92112,0.92092,0.92092
+logistic_regression,Logistic Regression,C=1.0,1.0,4.089,0.003,0.92178,0.921,0.92077,0.92079
+logistic_regression,Logistic Regression,C=3.0,3.0,5.316,0.003,0.91811,0.91725,0.91706,0.91706

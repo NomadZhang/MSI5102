@@ -1,0 +1,13 @@
+model_key,model,parameter_label,n_neighbors,weights,fit_seconds,predict_seconds,validation_accuracy,validation_precision_macro,validation_recall_macro,validation_f1_macro
+knn,k-Nearest Neighbors,"k=3, weights=distance",3,distance,0.006,1.629,0.97089,0.97142,0.9705,0.97083
+knn,k-Nearest Neighbors,"k=3, weights=uniform",3,uniform,0.006,1.636,0.96944,0.97012,0.969,0.96938
+knn,k-Nearest Neighbors,"k=5, weights=distance",5,distance,0.007,1.619,0.96856,0.96924,0.96816,0.96853
+knn,k-Nearest Neighbors,"k=1, weights=distance",1,distance,0.006,1.626,0.96822,0.96836,0.96782,0.96799
+knn,k-Nearest Neighbors,"k=1, weights=uniform",1,uniform,0.01,1.634,0.96822,0.96836,0.96782,0.96799
+knn,k-Nearest Neighbors,"k=7, weights=distance",7,distance,0.006,1.603,0.96722,0.96806,0.96684,0.96727
+knn,k-Nearest Neighbors,"k=5, weights=uniform",5,uniform,0.006,1.625,0.96722,0.96793,0.96679,0.96718
+knn,k-Nearest Neighbors,"k=9, weights=distance",9,distance,0.006,1.657,0.96544,0.96646,0.96505,0.96555
+knn,k-Nearest Neighbors,"k=7, weights=uniform",7,uniform,0.006,1.61,0.96544,0.96636,0.965,0.96545
+knn,k-Nearest Neighbors,"k=11, weights=distance",11,distance,0.006,1.61,0.96456,0.96575,0.96417,0.96473
+knn,k-Nearest Neighbors,"k=9, weights=uniform",9,uniform,0.006,1.624,0.96422,0.96528,0.96381,0.96432
+knn,k-Nearest Neighbors,"k=11, weights=uniform",11,uniform,0.006,1.628,0.96356,0.96474,0.96313,0.96368

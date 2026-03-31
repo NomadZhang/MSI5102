@@ -10,6 +10,7 @@
     "results_dir": "/Users/bob/Desktop/MNIST/artifacts/results",
     "pca_sample_size": 5000,
     "tsne_sample_size": 3000,
+    "validation_fraction": 0.15,
     "random_state": 42
   },
   "dataset": {
@@ -19,15 +20,43 @@
     "num_classes": 10
   },
   "embedding": {
-    "pca_explained_variance_ratio": 0.1692299097776413
+    "pca_explained_variance_ratio": 0.16922998428344727
+  },
+  "validation_strategy": {
+    "validation_fraction": 0.15,
+    "selection_summary": [
+      {
+        "model_key": "neural_network",
+        "model": "Neural Network",
+        "selected_configuration": "layers=256-128, alpha=0.0001, lr=0.001",
+        "validation_accuracy": 0.977,
+        "validation_f1_macro": 0.97693
+      },
+      {
+        "model_key": "knn",
+        "model": "k-Nearest Neighbors",
+        "selected_configuration": "k=3, weights=distance",
+        "validation_accuracy": 0.97089,
+        "validation_f1_macro": 0.97083
+      },
+      {
+        "model_key": "logistic_regression",
+        "model": "Logistic Regression",
+        "selected_configuration": "C=0.1",
+        "validation_accuracy": 0.92178,
+        "validation_f1_macro": 0.92094
+      }
+    ]
   },
   "top_model": {
-    "model": "neural_network",
-    "train_seconds": 4.272,
-    "predict_seconds": 0.004,
-    "accuracy": 0.9788,
-    "precision_macro": 0.97875,
-    "recall_macro": 0.97861,
-    "f1_macro": 0.97866
+    "model_key": "neural_network",
+    "model": "Neural Network",
+    "selected_configuration": "layers=256-128, alpha=0.0001, lr=0.001",
+    "train_seconds": 4.011,
+    "predict_seconds": 0.006,
+    "accuracy": 0.9807,
+    "precision_macro": 0.98062,
+    "recall_macro": 0.98052,
+    "f1_macro": 0.98056
   }
 }
