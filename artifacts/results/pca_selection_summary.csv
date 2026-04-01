@@ -1,0 +1,4 @@
+model_key,model,selected_configuration,selected_pca_components,validation_accuracy,validation_f1_macro,explained_variance_ratio
+neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",100,0.97956,0.97945,0.91466
+knn,k-Nearest Neighbors,"k=3, weights=distance",75,0.97611,0.97601,0.88288
+logistic_regression,Logistic Regression,C=0.1,150,0.92022,0.91938,0.94839

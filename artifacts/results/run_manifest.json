@@ -48,11 +48,50 @@
       }
     ]
   },
+  "pca_benchmark": {
+    "component_grid": [
+      25,
+      50,
+      75,
+      100,
+      150,
+      200
+    ],
+    "selection_summary": [
+      {
+        "model_key": "neural_network",
+        "model": "Neural Network",
+        "selected_configuration": "layers=256-128, alpha=0.0001, lr=0.001",
+        "selected_pca_components": 100,
+        "validation_accuracy": 0.97956,
+        "validation_f1_macro": 0.97945,
+        "explained_variance_ratio": 0.91466
+      },
+      {
+        "model_key": "knn",
+        "model": "k-Nearest Neighbors",
+        "selected_configuration": "k=3, weights=distance",
+        "selected_pca_components": 75,
+        "validation_accuracy": 0.97611,
+        "validation_f1_macro": 0.97601,
+        "explained_variance_ratio": 0.88288
+      },
+      {
+        "model_key": "logistic_regression",
+        "model": "Logistic Regression",
+        "selected_configuration": "C=0.1",
+        "selected_pca_components": 150,
+        "validation_accuracy": 0.92022,
+        "validation_f1_macro": 0.91938,
+        "explained_variance_ratio": 0.94839
+      }
+    ]
+  },
   "top_model": {
     "model_key": "neural_network",
     "model": "Neural Network",
     "selected_configuration": "layers=256-128, alpha=0.0001, lr=0.001",
-    "train_seconds": 4.011,
+    "train_seconds": 4.122,
     "predict_seconds": 0.006,
     "accuracy": 0.9807,
     "precision_macro": 0.98062,

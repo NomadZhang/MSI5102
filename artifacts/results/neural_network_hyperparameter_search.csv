@@ -1,7 +1,7 @@
 model_key,model,parameter_label,hidden_layer_sizes,alpha,learning_rate_init,fit_seconds,predict_seconds,validation_accuracy,validation_precision_macro,validation_recall_macro,validation_f1_macro
-neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",256-128,0.0001,0.001,3.393,0.005,0.977,0.977,0.97696,0.97693
-neural_network,Neural Network,"layers=128-64, alpha=0.0001, lr=0.001",128-64,0.0001,0.001,2.443,0.004,0.97689,0.97667,0.9768,0.97672
-neural_network,Neural Network,"layers=256, alpha=0.0001, lr=0.001",256,0.0001,0.001,4.279,0.005,0.97622,0.97626,0.97622,0.97616
-neural_network,Neural Network,"layers=128-64, alpha=0.0005, lr=0.001",128-64,0.0005,0.001,2.455,0.004,0.97622,0.97604,0.97613,0.97606
-neural_network,Neural Network,"layers=128, alpha=0.0001, lr=0.001",128,0.0001,0.001,2.877,0.003,0.97278,0.97285,0.97259,0.97263
-neural_network,Neural Network,"layers=128-64, alpha=0.0001, lr=0.0005",128-64,0.0001,0.0005,2.403,0.004,0.97256,0.97249,0.97239,0.97242
+neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",256-128,0.0001,0.001,3.603,0.005,0.977,0.977,0.97696,0.97693
+neural_network,Neural Network,"layers=128-64, alpha=0.0001, lr=0.001",128-64,0.0001,0.001,2.586,0.004,0.97689,0.97667,0.9768,0.97672
+neural_network,Neural Network,"layers=256, alpha=0.0001, lr=0.001",256,0.0001,0.001,4.84,0.008,0.97622,0.97626,0.97622,0.97616
+neural_network,Neural Network,"layers=128-64, alpha=0.0005, lr=0.001",128-64,0.0005,0.001,2.649,0.004,0.97622,0.97604,0.97613,0.97606
+neural_network,Neural Network,"layers=128, alpha=0.0001, lr=0.001",128,0.0001,0.001,2.926,0.003,0.97278,0.97285,0.97259,0.97263
+neural_network,Neural Network,"layers=128-64, alpha=0.0001, lr=0.0005",128-64,0.0001,0.0005,2.51,0.004,0.97256,0.97249,0.97239,0.97242

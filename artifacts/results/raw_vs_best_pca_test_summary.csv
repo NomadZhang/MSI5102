@@ -1,0 +1,7 @@
+model_key,model,selected_configuration,representation_key,representation_label,is_pca,n_components,explained_variance_ratio,transform_seconds,train_seconds,predict_seconds,accuracy,precision_macro,recall_macro,f1_macro,accuracy_delta_vs_raw
+knn,k-Nearest Neighbors,"k=3, weights=distance",raw,Raw (784),False,784,1.0,0.0,0.008,2.552,0.9717,0.9719,0.97134,0.97153,0.0
+knn,k-Nearest Neighbors,"k=3, weights=distance",pca_75,PCA (75),True,75,0.88283,0.067,0.002,0.37,0.9754,0.97541,0.97514,0.97523,0.0037
+logistic_regression,Logistic Regression,C=0.1,raw,Raw (784),False,784,1.0,0.0,2.645,0.008,0.9257,0.92479,0.92459,0.92457,0.0
+logistic_regression,Logistic Regression,C=0.1,pca_150,PCA (150),True,150,0.94835,0.082,0.553,0.001,0.9233,0.92222,0.92227,0.92218,-0.0024
+neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",raw,Raw (784),False,784,1.0,0.0,4.122,0.006,0.9807,0.98062,0.98052,0.98056,0.0
+neural_network,Neural Network,"layers=256-128, alpha=0.0001, lr=0.001",pca_100,PCA (100),True,100,0.91462,0.072,3.669,0.004,0.9812,0.98111,0.98101,0.98105,0.0005

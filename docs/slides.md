@@ -87,7 +87,43 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 4: k-Nearest Neighbors Tuning
+## Slide 4: Raw vs PCA Benchmark
+
+**Visual**
+
+- `artifacts/figures/pca_component_benchmark.png`
+- `artifacts/figures/raw_vs_best_pca_dashboard.png`
+
+**Put on the slide**
+
+- Controlled benchmark:
+  - keep each model configuration fixed
+  - only change the feature representation
+- PCA counts tested:
+  - 25, 50, 75, 100, 150, 200
+- Best PCA choice by validation accuracy:
+  - k-NN: **75 components**
+  - Logistic Regression: **150 components**
+  - Neural Network: **100 components**
+- Final test comparison:
+  - k-NN: raw **97.17%** → PCA-75 **97.54%**
+  - Logistic Regression: raw **92.57%** → PCA-150 **92.33%**
+  - Neural Network: raw **98.07%** → PCA-100 **98.12%**
+- Main takeaway:
+  - PCA can help, but the effect is model-dependent
+  - t-SNE remains a visualization tool, not the training representation
+
+**What to say**
+
+- “To answer whether dimensionality reduction actually improves modeling, we ran a controlled benchmark after model selection.”
+- “We kept the chosen hyperparameters fixed and changed only the input representation: raw pixels versus several PCA component counts.”
+- “The results show that PCA is useful for some models. k-NN improved the most, the neural network improved slightly, and logistic regression did not benefit.”
+- “This is why we should not say dimensionality reduction is automatically better. It depends on the model and the representation.”
+- “It also explains why we did not train on t-SNE. t-SNE is excellent for 2D visualization, but PCA is the appropriate dimensionality-reduction method to benchmark as a reusable feature transform.”
+
+---
+
+## Slide 5: k-Nearest Neighbors Tuning
 
 **Visual**
 
@@ -113,7 +149,7 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 5: Logistic Regression Tuning and Multiclass Handling
+## Slide 6: Logistic Regression Tuning and Multiclass Handling
 
 **Visual**
 
@@ -140,7 +176,7 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 6: Neural Network Tuning and Chosen Architecture
+## Slide 7: Neural Network Tuning and Chosen Architecture
 
 **Visual**
 
@@ -176,7 +212,7 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 7: Neural Network Training Evidence
+## Slide 8: Neural Network Training Evidence
 
 **Visual**
 
@@ -200,7 +236,7 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 8: Final Model Comparison
+## Slide 9: Final Model Comparison
 
 **Visual**
 
@@ -226,7 +262,7 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 9: Error Analysis and Strengths / Weaknesses
+## Slide 10: Error Analysis and Strengths / Weaknesses
 
 **Visual**
 
@@ -273,7 +309,7 @@ Use this file as a slide-by-slide guide. Each section tells you:
 
 ---
 
-## Slide 10: Conclusion and Recommendation
+## Slide 11: Conclusion and Recommendation
 
 **Visual**
 
@@ -314,6 +350,9 @@ Use this file as a slide-by-slide guide. Each section tells you:
 - `artifacts/results/knn_hyperparameter_search.csv`
 - `artifacts/results/logistic_regression_hyperparameter_search.csv`
 - `artifacts/results/neural_network_hyperparameter_search.csv`
+- `artifacts/results/pca_component_benchmark_validation.csv`
+- `artifacts/results/pca_selection_summary.csv`
+- `artifacts/results/raw_vs_best_pca_test_summary.csv`
 - `artifacts/results/knn_top_confusions.csv`
 - `artifacts/results/logistic_regression_top_confusions.csv`
 - `artifacts/results/neural_network_top_confusions.csv`

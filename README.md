@@ -11,6 +11,7 @@ Poetry-based ETL and modeling pipeline for handwritten digit recognition on the 
   - Logistic Regression
   - Neural Network (`MLPClassifier`)
 - Produces 2D PCA and t-SNE visualizations
+- Benchmarks raw pixels against several PCA-reduced feature sets
 - Writes model metrics and prediction outputs to CSV
 
 ## Run
