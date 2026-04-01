@@ -91,7 +91,7 @@
     "model_key": "neural_network",
     "model": "Neural Network",
     "selected_configuration": "layers=256-128, alpha=0.0001, lr=0.001",
-    "train_seconds": 4.103,
+    "train_seconds": 4.014,
     "predict_seconds": 0.006,
     "accuracy": 0.9807,
     "precision_macro": 0.98062,
